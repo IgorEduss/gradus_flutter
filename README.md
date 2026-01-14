@@ -1,3 +1,14 @@
+<p align="center">
+  <img src="assets/images/logo.png" alt="Logo Gradus" width="200" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-3.x-blue?style=flat&logo=flutter" alt="Flutter Version" />
+  <img src="https://img.shields.io/badge/Dart-3.x-blue?style=flat&logo=dart" alt="Dart Version" />
+  <img src="https://img.shields.io/badge/Architecture-Clean-green?style=flat" alt="Clean Architecture" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat" alt="License" />
+</p>
+
 # Gradus - Aplicação de Finanças Pessoais (Teoria da Escada Rolante)
 
 > "Transforme economias fortuitas em investimento consciente."
@@ -10,7 +21,10 @@ Este projeto foi desenvolvido com foco em **Engenharia de Software robusta**, ut
 
 ### 🎥 Demonstração
 
-*(Espaço reservado para GIF do Ciclo Mensal ou Dashboard)*
+<p align="center">
+  <img src="assets/images/gradus.gif" alt="Demo do App Gradus" width="200" />
+</p>
+
 
 ## 🛠️ Stack Tecnológica & Arquitetura
 
@@ -18,7 +32,7 @@ O projeto segue estritamente a **Clean Architecture** dividida em camadas (`Doma
 
 * **Linguagem:** Dart (Null Safety)
 * **Framework:** Flutter (Android/iOS)
-* **Gerenciamento de Estado:** Riverpod (Providers e StateNotifiers)
+* **Gerenciamento de Estado:** Riverpod (Providers e Notifiers - Code Gen)
 * **Banco de Dados Local:** SQLite via **Drift** (Persistência reativa e segura)
 * **Injeção de Dependência:** GetIt + Injectable
 * **Integração Cloud:** Google Drive API (para backups criptografados)
@@ -72,7 +86,7 @@ gradus/
     ```bash
     flutter pub get
     ```
-3.  Gere os arquivos de código (Drift, Freezed, Injectable):
+3.  Gere os arquivos de código (Drift, Riverpod, Injectable):
     ```bash
     dart run build_runner build --delete-conflicting-outputs
     ```
